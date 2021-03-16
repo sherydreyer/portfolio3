@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        .mySlides1,
+        .mySlides2 {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a grey background color */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="https://sherydreyer.github.io/portfolio3/aboutMe.html">About me</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="https://sherydreyer.github.io/portfolio3/email.html">Contact me</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="Search..">
+                        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-3 well">
+                <div class="well">
+                    <h1>My Coding Profile</h1>
+                    <div class="slideshow-container">
+                        <div class="mySlides1">
+                            <img src="https://sherydreyer.github.io/portfolio3/sheryl.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides1">
+                            <img src="https://sherydreyer.github.io/portfolio3/sheryl.jpeg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides1">
+                            <img src="https://sherydreyer.github.io/portfolio3/sheryl4.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="well">
+                    <h3>Work to be covered at Code College</h3>
+                    <p>
+                        <span class="label label-default">Intro to Javascript</span><br><br>
+                        <span class="label label-primary">Intro to HTML</span><br><br>
+                        <span class="label label-success">Intro to CSS</span><br><br>
+                        <span class="label label-info">MYSQL</span><br><br>
+                        <span class="label label-warning">Wordpress</span><br><br>
+                        <span class="label label-danger">Flutter</span>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-sm-7">
+
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><a href="https://sherydreyer.github.io/portfolio3/javascript.html">My Javascript work</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p><strong><em>What is Javascript?</em></strong><br>Javascript (JS) is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly found embedded in HTML code. JavaScript is an interpreted
+                                language. Thus, it doesn't need to be compiled. JavaScript renders web pages in an interactive and dynamic fashion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><a href="#">My MYSQL work</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p><strong><em>What is MYSQL?</em></strong><br>MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for
+                                Structured Query Language.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><a href="#">My Wordpress work</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p><strong><em>What is Wordpress?</em></strong><br>WordPress is a free and open-source content management system (CMS) based on PHP and MySQL. It is reportedly the most popular website management or blogging system in use on the
+                                Web, supporting more than 60 million websites. It is super flexible and can be extended by using plugins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4 href="#"><a>My Flutter work</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="well">
+                            <p><strong><em>What is Flutter?</em></strong><br>Flutter is an open-source mobile application development framework created by Google. It is used to develop applications for Android and iOS.Flutter UIs are built with an imperative,
+                                object-oriented language (Dart, the same language used to build Flutter's framework).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 well">
+                <div class="thumbnail">
+                    <h3>Upcoming Work:</h3>
+                    <p><strong>MYSQL</strong></p>
+                    <p>November 2019</p>
+                </div>
+                <div class="thumbnail">
+                    <p><strong>Wordpress</strong></p>
+                    <p>February 2019</p>
+                </div>
+                <div class="thumbnail">
+                    <p><strong>Flutter</strong></p>
+                    <p>April 2019</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = [1, 1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {
+                slideIndex[no] = 1
+            }
+            if (n < 1) {
+                slideIndex[no] = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
